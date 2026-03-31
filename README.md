@@ -1,4 +1,4 @@
-# Knutti-Style Climate Model Weighting for CMIP6 Projections
+# Performance and Independence Climate Model Weighting for CMIP6 Projections
 
 **ETH Zurich -- Climate Change, Uncertainty and Risk Modelling (FS 2026)**
 
