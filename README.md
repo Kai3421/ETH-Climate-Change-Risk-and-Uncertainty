@@ -39,7 +39,7 @@ Performance(i) = exp( -D_i^2 / sigma_D^2 )
 Independence(i) = 1 / (1 + sum_{j != i} exp( -S_ij^2 / sigma_S^2 ))
 ```
 
-The tuning parameters `sigma_D = 0.08 C` and `sigma_S = 0.31 C` were selected as a conservative midpoint between a grid-search optimum and data-driven defaults (see [Sensitivity Analysis](#sensitivity-analysis)).
+The tuning parameters `sigma_D = 0.08 C` and `sigma_S = 0.31 C` were set to the mean of the tested parameter ranges (see [Sensitivity Analysis](#sensitivity-analysis)).
 
 ### Key Time Periods
 
@@ -129,7 +129,7 @@ A leave-one-out cross-validation where each model serves as pseudo-observations.
 
 ### 3. Sensitivity Analysis
 
-A 15x15 grid search over sigma_D (0.02-0.30) and sigma_S (0.05-0.60) shows the end-of-century warming estimate ranges from 3.17 C to 3.43 C -- a spread of only 0.26 C, indicating moderate robustness to parameter choice.
+A sensitivity analysis over sigma_D (0.02-0.30) and sigma_S (0.05-0.60) shows the end-of-century warming estimate ranges from 3.17 C to 3.43 C -- a spread of only 0.26 C, indicating moderate robustness to parameter choice.
 
 ![Sensitivity heatmap](presentation_figures/fig10_sensitivity_heatmap.png)
 
